@@ -5,8 +5,10 @@ public class main {
     
     public static void main(String[] args) {
         
-        dataBuku data = new dataBuku();
         Scanner scn = new Scanner(System.in);
+
+        dataBuku data = new dataBuku();
+        String dataBuku;
         int kodeBuku;
 
         System.out.println("Perpustakaan Universitas University");
@@ -18,7 +20,7 @@ public class main {
 
         kodeBuku = scn.nextInt();
 
-        String dataBuku = data.getData(kodeBuku);
+        dataBuku = data.getData(kodeBuku);
             System.out.println(dataBuku);
         }
 
