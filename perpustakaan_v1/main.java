@@ -1,4 +1,4 @@
-package perpustakaan;
+package perpustakaan_v1;
 import java.util.Scanner;
 
 public class main {
