@@ -10,7 +10,6 @@ public class dataBuku {
     public String[][] bukuPolitik;
     public String[][] bukuFiksi;
 
-
     public dataBuku(){
 
     bukuTeknologi = new String[][] {
