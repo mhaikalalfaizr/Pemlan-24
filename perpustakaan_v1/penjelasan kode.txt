@@ -1,0 +1,24 @@
+Class Perpustakaan
+BARIS PENJELASAN
+1 Meng-import package “perpustakaan”
+3 Membuat class “dataBuku”, class ini merepresentasikan data data dan atribut buku-buku di setiap kategori.
+5 - 71 Membuat daftar atribut dan detail buku per kategori dengan array dua dimensi.
+75 Method “ getData” berfungsi untuk menampilkan data-data buku berdasarkan data pada array dua dimensi.
+76 Deklarasi dan inisialisasi variabel String “data” untuk data buku.
+78 - 161 Menggunakan ‘switch’ untuk menampilkan daftar buku sesuai dengan 1 kategori yang dipilih oleh user.
+163 - 165 Mengeluarkan pesan error jika kode yang diinputkan oleh user tidak sesuai dengan data (1 - 7).
+168 Me-return isi “data” saat dipanggil.
+
+Class Main
+BARIS PENJELASAN
+1 Meng-import package “perpustakaan”
+2 Meng-import Scanner.
+4 Membuat class “main”.
+6 Membuat method main.
+8 Membuat scanner “scn”.
+10 Membuat objek “data” dari class dataBuku.
+11 Deklarasi variabel String “dataBuku”.
+12 Deklarasi variabel integer “kodeBuku” untuk menyimpan input kode dari user.
+14 - 19 Mengeluarkan tampilan program untuk user yang berisi judul program, daftar kategori buku, dan perintah untuk menginput kode kategori buku yang diinginkan.
+21 Scanner untuk menampung input kode dari user.
+23 - 24 Memanggil method “getData” untuk menampilkan daftar buku sesuai kategori yang diinginkan user.
