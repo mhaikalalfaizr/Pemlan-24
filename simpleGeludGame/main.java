@@ -23,10 +23,8 @@ public class main {
         hero1.setHP(scn.nextDouble());
         System.out.print("Kemampuan Serangan\t: ");
         hero1.setSerangan(scn.nextDouble());
-        scn.nextLine();
         System.out.print("Kemampuan Pertahanan\t: ");
         hero1.setPertahanan(scn.nextDouble());
-        scn.nextLine();
 
         System.out.println();
 
@@ -40,17 +38,15 @@ public class main {
         double hpHero2 = scn.nextDouble();
         System.out.print("Kemampuan Serangan\t: ");
         double seranganHero2 = scn.nextDouble();
-        scn.nextLine();
         System.out.print("Kemampuan Pertahanan\t: ");
         double pertahananHero2 = scn.nextDouble();
-        scn.nextLine();
 
         HeroData hero2 = new HeroData(namaHero2, hpHero2, seranganHero2, pertahananHero2);
 
         int ronde = 1;
         while (hero1.getHP() > 0 && hero2.getHP() > 0) {
 
-            System.out.println("============================================================");
+            System.out.println("\n================================================");
             System.out.println("Ronde " + ronde + "\n");
         
             hero1.serang(hero2);
@@ -66,7 +62,7 @@ public class main {
             System.out.println(hero2.getNama() + " menyerang sebesar " + hero2.getSerangan());
             System.out.println(hero1.getNama() + " memiliki pertahanan sebesar " + hero1.getPertahanan());
             System.out.println("HP " + hero1.getNama() + " saat ini " + hero1.getHP());
-            System.out.println("============================================================");
+            System.out.println("================================================");
 
             ronde++;
 
