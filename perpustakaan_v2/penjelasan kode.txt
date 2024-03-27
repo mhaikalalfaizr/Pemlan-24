@@ -1,0 +1,28 @@
+file dataBuku.java
+BARIS PENJELASAN
+1 Mendefinisikan package kode.
+3 Deklarasi class ‘dataBuku’
+5 - 11 Mendeklarasikan array dua dimensi untuk setiap kategori buku.
+13 Mendefinisikan constructor ‘dataBuku’
+15 - 83 Menginisialisasikan data-data buku ke dalam array dua dimensi untuk setiap kategori buku.
+87 - 88 Membuat method ‘getData’ yang menerima parameter kode buku lalu akan mengembalikan string data buku.
+90 - 187 Method switch yang akan menampilkan data-data buku sesuai nomor kategori yang diinputkan user.
+189 - 191 Menampilkan pesan error jika input user tidak sesuai yang diharapkan (Angka 1 - 7)
+197 - 200 Membuat method ‘hitungKata’ yang menerima parameter sinopsis, lalu akan mengembalikan nilai jumlah kata yang ada dalam sinopsis tersebut dengan menggunakan ‘split’ untuk menghitung kata berdasarkan banyaknya spasi.
+
+file main.java
+BARIS PENJELASAN
+1 Mendefinisikan package kode.
+2 Mengimpor utility scanner.
+4 Mendeklarasikan class main.
+6 Membuat method main.
+8 Membuat scanner.
+10 Membuat objek ‘data’ dari kelas ‘dataBuku’.
+11 Mendeklarasikan string ‘dataBuku’ untuk menyimpan data buku.
+12 Mendeklarasikan integer ‘kodeBuku’ untuk menyimpan kode buku sesuai input pengguna.
+13 Mendeklarasikan string ‘konfirmasiKeluar’ untuk menyimpan input pengguna apakah ingin keluar program atau tidak.
+15 - 21 Menampilkan pilihan kategori buku dan memerintahkan user untuk memasukkan nomor kategori buku yang ingin dicari dalam loop do-while.
+23 Menggunakan variabel ‘kodeBuku’ untuk menampung input user.
+25 - 26 Memanggil method ‘getData’ dari objek ‘data’ untuk mendapat data-data buku sesuai kategori yang diinginkan user lalu menampilkannya ke layar.
+28 - 29 Mengonfirmasi ke user apakah ingin keluar program atau tidak dan menyimpan inputnya dalam variabel ‘konfirmasiKeluar’.
+31 - 33 Jika memilih tidak keluar, user akan kembali ke pilihan kategori, sementara jika memilih keluar, akan ditampilkan pesan keluar.
