@@ -1,7 +1,6 @@
 package polymorphismTest;
 
 public class main {
-    
     public static void main(String[] args) {
         
         Kue[] kumpulanKue = new Kue[20];
@@ -47,9 +46,6 @@ public class main {
         for (int i = 0; i < 20; i++){
             totalHarga += kumpulanKue[i].hitungHarga();
         }
-        System.out.println("Total harga semua jenis kue : " + totalHarga);
-
-        System.out.println();
 
         double totalHargaKueP = 0;
         double totalBeratKueP = 0;
@@ -60,10 +56,6 @@ public class main {
                 totalBeratKueP += kueP.getBerat();
             }
         }
-        System.out.println("Total harga kue pesanan : Rp. " + totalHargaKueP +
-                            "\nTotal berat kue pesanan : " + totalBeratKueP + " kg");
-
-        System.out.println();
 
         double totalHargaKueJ = 0;
         double totalJumlahKueJ = 0;
@@ -74,10 +66,6 @@ public class main {
                 totalJumlahKueJ += kueJ.getJumlah();
             }
         }
-        System.out.println("Total harga kue jadi : Rp. " + totalHargaKueJ +
-                            "\nTotal jumlah kue jadi : " + totalJumlahKueJ);
-
-        System.out.println("\n==================================================\n");
 
         Kue kueTermahal = null;
         double hargaTertinggi = 0;
@@ -87,8 +75,14 @@ public class main {
                 kueTermahal = kumpulanKue[i];
             }
         }
+
+        System.out.println("Total harga semua jenis kue\t: Rp. " + totalHarga);
+        System.out.println("\nTotal harga kue pesanan\t\t: Rp. " + totalHargaKueP +
+                            "\nTotal berat kue pesanan\t\t: " + totalBeratKueP + " kg");
+        System.out.println("\nTotal harga kue jadi\t\t: Rp. " + totalHargaKueJ +
+                            "\nTotal jumlah kue jadi\t\t: " + totalJumlahKueJ);
+        System.out.println("\n==================================================\n");
         System.out.println("Kue dengan harga akhir terbesar :\n" + kueTermahal.toString() + "\nJenis Kue\t: " + kueTermahal.getClass().getSimpleName());
 
     }
-
 }
