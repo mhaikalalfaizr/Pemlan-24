@@ -1,0 +1,87 @@
+Manusia.java
+BARIS PENJELASAN
+1-2 Membuat package dan mengimport objek local date.
+4 Membuat class “Manusia”
+6-9 Membuat atribut nama, jenis kelamin, NIK, dan status menikah
+dengan private.
+11-16 Konstruktor “Manusia” dengan atribut-atribut class manusia sebagai
+dasar untuk inheritance kepada class lain nanitnya.
+18-48 Method setter dan getter nama, jenis kelamin, NIK, dan status
+menikah.
+50-56 Method getTunjangan yang menentukan berapa banyak tunjangan
+yang akan diterima berdasarkan status menikah dan jenis kelamin. Jika
+sudah menikah dan berjenis kelamin laki-laki (true), maka akan
+mendapatkan tunjangan $25. Jika perempuan akan mendapatkan
+tunjangan $20. Namun jika belum menikah, apapun gendernya, maka
+hanya akan mendapat tunjangan $15.
+58-60 Getter getPendapatan yang me-return getTunjangan.
+62-64 Method toString untuk menampilkan biodata manusia berdasarkan
+atribut yang ada.
+
+MahasiswaFILKOM.java
+BARIS PENJELASAN
+1 Membuat package.
+3 Membuat class “MahasiswaFILKOM” yang merupakan turunan dari
+class manusia.
+5-6 Membuat atribut NIM dan IPK.
+8-12 Konstruktor “MahasiswaFILKOM” dengan menambahkan atribut
+NIM dan IPK, lalu mengambil turunan dari class manusia yaitu atribut
+nama, NIK, jenis kelamin, dan status menikah.
+14-27 Method setter dan getter NIM dan IPK.
+29-52 Method getStatus untuk menentukan angkatan dan prodi mahasiswa
+berdasarkan NIM-nya.
+Angkatan ditentukan dari 2 angka pertama pada NIM, dan prodi
+ditentukan dari angka ke 5 dan 6.
+Lalu akan me-return nama prodi dan angkatannya.
+54-62 Method getBeasiswa untuk menghitung banyak uang beasiswa yang
+didapatkan berdasarkan range IPK mahasiswa.
+64-67 Method toString untuk menampilkan biodata mahasiswa berdasarkan
+atribut yang ada.
+
+Pekerja.java
+BARIS PENJELASAN
+1-2 Membuat package dan membuat objek localDate.
+4 Membuat class “Pekerja” yang merupakan turunan dari class manusia.
+6-8 Membuat atribut gaji, tahun masuk kerja, dan jumlah anaknya.
+10-15 Konstruktor “Pekerja” dengan menambahkan atribut gaji, tahun masuk
+kerja, dan jumlah anak, lalu mengambil turunan dari class manusia
+yaitu atribut nama, NIK, jenis kelamin, dan status menikah.
+17-35 Method setter dan getter gaji, tahun masuk kerja, dan jumlah anak.
+37-50 Method getBonus untuk menentukan berapa banyak bonus yang akan
+didapatkan pekerja.
+Lama bekerja ditentukan dari tahun sekarang menggunakan local date
+dikurangi dengan tahun masuk, lalu disimpan di variabel
+tahunBekerja.
+Kemudian bonus akan ditentukan sesuai kategori lamanya bekerja,
+lalu dikali beberapa persen dengan banyaknya gaji pekerja.
+52-54 Method getPendapatan untuk menghitung total pendapatan pekerja
+setelah penjumlahan gaji pokok, bonus, dan tunjangan sesuai jumlah
+anak yang dimiliki.
+56-59 Method toString untuk menampilkan biodata pekerja berdasarkan
+atribut yang ada.
+
+Manager.java
+BARIS PENJELASAN
+1-2 Membuat package dan membuat objek localDate.
+4 Membuat class “Manager” yang merupakan turunan dari class pekerja.
+6 Membuat atribut departemen.
+8-11 Konstruktor “Manager” dengan menambahkan atribut departemen,
+lalu mengambil turunan dari class pekerja dan class manusia yaitu
+atribut nama, NIK, jenis kelamin, status menikah, gaji, tahun masuk,
+dan jumlah anak.
+13-19 Method setter dan getter departemen.
+21-23 Method getPendapatan untuk menghitung total pendapatan manajer
+setelah penjumlahan pendapatan sebelumnya dengan penambahan
+tunjangan ekstra, yaitu 10% dari gaji.
+25-28 Method toString untuk menampilkan biodata manajer berdasarkan
+atribut yang ada.
+
+Main.java
+BARIS PENJELASAN
+1-2 Membuat package dan membuat objek localDate.
+4-6 Membuat class main dan method main.
+6-8 Membuat atribut gaji, tahun masuk kerja, dan jumlah anaknya.
+8-20 Membuat berbagai objek dari berbagai kelas (Manusia, mahasiswa
+FILKOM, pekerja, dan manajer) sesuai dengan soal dan mengisikan
+atributnya sesuai parameter.
+23-33 Menampilkan nilai atribut seluruh objek ke layar.
