@@ -1,0 +1,60 @@
+Kue.java
+BARIS PENJELASAN
+1 Mengimport package polymorphismTest.
+3 Class abstrak Kue.
+5-6 Atribut nama dan harga kue.
+8-11 Konstruktor Kue yang berisi parameter nama dan harga kue.
+13 Method abstrak hitungHarga yang nantinya akan dipakai di subclass
+lain.
+15-18 Method toString untuk menampilkan nama dan harga kue.
+
+KuePesanan.java
+BARIS PENJELASAN
+1 Mengimport package polymorphismTest.
+3 Class KuePesanan yang merupakan extends dari class Kue.
+5 Atribut berat kue.
+7 Konstruktor KuePesanan yang mewarisi nama dan harga class induk,
+dan menambahkan atribut berat.
+12-15 Method hitungHarga untuk menampilkan total harga yang berasal dari
+harga dikali berat kue.
+17-19 Getter getBerat untuk mendapat berat sebuah jenis kue.
+
+KueJadi.java
+BARIS PENJELASAN
+1 Mengimport package polymorphismTest.
+3 Class KueJadiyang merupakan extends dari class Kue.
+5 Atribut jumlah kue.
+7 Konstruktor KuePesanan yang mewarisi nama dan harga class induk,
+dan menambahkan atribut jumlah..
+12-15 Method hitungHarga untuk menampilkan total harga yang berasal dari
+harga dikali jumlah dikali 2.
+17-19 Getter getJumlah untuk mendapat jumlah sebuah jenis kue.
+
+main.java
+BARIS PENJELASAN
+1 Mengimport package polymorphismTest.
+3 Membuat class main.
+4 Membuat method main.
+6 Array yang membuat objek kumpulanKue yang berindeks 19.
+8-28 Membuat 20 objek kue (10 kue pesanan, 10 kue jadi) dengan nama,
+harga, berat, dan jumlah yang berbeda-beda di setiap objeknya.
+30-41 Menampilkan daftar seluruh kue yang ada beserta keterangan jenisnya
+dengan looping for-if sederhana.
+45-48 Menghitung total harga seluruh kue dengan loop array lalu disimpan
+pada variabel double totalHarga.
+50-58 Menghitung total harga dan berat seluruh kue pesanan dengan loop
+array dan ‘instance of’ untuk memastikan bahwa kue yang dimaksud
+adalah bagian dari subclass kuePesanan, lalu disimpan pada variabel
+totalHargaKueP dan totalBeratKueP.
+60-68 Menghitung total harga dan jumlah seluruh kue jadi dengan loop array,
+‘instance of’ untuk memastikan bahwa kue yang dimaksud adalah
+bagian dari subclass kueJadi, lalu disimpan pada variabel
+totalHargaKueJ dan totalJumlahKueJ.
+70-77 Menghitung kue apa yang paling tinggi harganya setelah
+dikalkulasikan (Dikalikan dengan berat ataupun jumlah) diantara
+seluruh kue. Harga tertinggi didapatkan dengan memeriksa total harga
+setiap kue lalu dibandingkan dengan kue berikutnya pada setiap
+iterasi.
+79-85 Menampilkan ke layar seluruh hasil penghitungan, mulai dari total
+harga seluruh kue, total harga & berat kue pesanan, total harga &
+jumlah kue jadi, sampai kue yang paling tinggi harganya.
