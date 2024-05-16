@@ -1,0 +1,52 @@
+Payable.java
+BARIS PENJELASAN
+
+1-5 Menmbuat interface Payable dengan method getPayableAmount
+
+Invoice.java
+BARIS PENJELASAN
+
+1-3 Deklarasi package dan class Invoice yang mengimplementasikan
+Interface Payable
+5-7 Deklarasi atribut-atribut invoice.
+9-13 Konstruktor Invoice dengan parameter sesuai atributnya.
+15-18 Method yang mengimplementasikan method dari Interface Payable,
+method ini menghitung total harga berdasarkan kuantitas dan harga
+
+produk itu sendiri.
+
+Employee.java
+BARIS PENJELASAN
+
+1-3 Deklarasi package dan class Employee yang mengimplementasikan
+Interface Payable
+5-8 Deklarasi atribut-atribut employee.
+10-15 Konstruktor Employee dengan parameter sesuai atributnya.
+18 Instansiasi variabel untuk menyimpan jumlah tagihan.
+20-25 Method yang mengimplementasikan method dari Interface Payable,
+method ini menghitung total harga penjumlahan dari method
+getPayableAmount dan nantinya akan mengembalikan nilai
+payableAmount.
+27-29 Method untuk menghitung total akhir gaji setelah dikurangi dengan
+harga belanja.
+31-42 Method yang mencetak detail tagihan belanja, yaitu produk, jumlah,
+harga, total harga untuk setiap invoice dan total harga seluruh barang.
+44-49 Method yang mencetak detail pegawai, yaitu nomor registrasi, nama,
+dan gaji per bulan.
+
+Main.java
+BARIS PENJELASAN
+
+1-3 Deklarasi package, utility Scanner, dan class Employee yang
+mengimplementasikan Interface Payable
+9-18 Meminta user untuk memasukkan nomor registrasi pegawai, nama,
+dan gajinya per bulan.
+20-25 Meminta user untuk memasukkan jumlah barang yang ia ingin beli,
+lalu jumlah tersebut akan disimpan di variabel stuffCount dan array
+Invoice.
+27-44 Meminta user untuk mengisikan detail barang yang dibeli, mulai dari
+nama, jumlah, dan harga barang secara loop sesuai jumlah barang
+sebelumnya, lalu disimpan dalam array invoices.
+46 Pembuatan objek pegawai dengan atributnya.
+48-51 Menampilkan detail pegawai, detail belanjaannya, dan juga total
+gajinya setelah dikurangi dengan harga belanjaannya.
