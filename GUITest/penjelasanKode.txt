@@ -1,0 +1,22 @@
+GUI.java
+BARIS PENJELASAN
+1 Deklarasi package GUITest
+3-4 Import utility untuk membuat GUI.
+6 Deklarasi class GUI.
+8-20 Deklarasi berbagai variabel untuk kebutuhan GUI, seperti nama,
+tanggal lahir, dan lain-lain.
+22-30 Konstruktor class GUI yang berisi atribut frame, seperti judul, ukuran,
+batasan, dan lain-lain.
+32-68 Mengatur ukuran dan batasan dari setiap variabel komponen GUI yang
+telah dideklarasikan sebelumnya.
+70-73 Method yang akan memeriksa isi form dan memunculkan pesan ketika
+user menekan tombol submit.
+75-79 Jika form belum lengkap, akan muncul pesan notifikasi.
+81-86 Jika form sudah lengkap, akan muncul notifikasi konfirmasi untuk
+bertanya apakah user sudah memasukkan data dengan benar. Jika
+belum, maka user akan dikembalikan ke halaman awal form.
+88-97 Jika user mengkonfirmasi, akan muncul overview dari seluruh data
+yang telah diinputkan sebelumnya di window baru.
+105-111 Main method yang berisi SwingUtilities.invokeLater untuk
+memastikan thread GUI dijalankan di Event Dispatch Thread dan
+runnable yang menampilkan visibilitas dari GUI yang ada.
